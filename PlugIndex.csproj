@@ -71,6 +71,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /y  "$(SolutionDir)LICENSE-PlugIndex.txt" "$(SolutionDir)BUTTER_Client\$(OutDir)"</PostBuildEvent>
+    <PostBuildEvent>xcopy /y  "$(SolutionDir)LICENSE-PlugIndex.txt" "..\$(OutDir)"
+
+</PostBuildEvent>
   </PropertyGroup>
 </Project>
